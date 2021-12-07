@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Order Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form action="">
+      <div class="title">ADD NEW ORDER</div>
+      <div class="profile">
+        <div class="profile-title">
+          <h1 class="customerprofile">CUSTOMER PROFILE</h1>
+        </div>
+        <div class="search-input">
+          <input
+            class="customerinput"
+            placeholder="Search Customer"
+            type="search"
+          />
+          <button class="searchbtn">Search</button>
+          <div class="radios">
+            <input type="radio" name="courses" value="Bca" />By name
+            <input type="radio" name="courses" value="bcom" />By CNIC
+            <input type="radio" name="courses" value="bsc" />By Mobile #
+          </div>
+        </div>
+      </div>
+      <div class="main-user">
+        <div class="user-data">
+          <div class="user-data-main">
+            <div class="user-data-1">
+              <span> First Name: </span>
+              <span> Address :</span><span> City :</span>
+              <span> Country:</span>
+              <span>Mobile #1:</span>
+            </div>
+            <div class="user-data-2">
+              <span>Cnic:</span><span>Postal Code:</span>
+              <span>Email:</span>
+              <span> Mobile #2:</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="user-name">
+          <h1 class="username">USER NAME</h1>
+          <p class="usermobile">Mobile #1 // Mobile #2</p>
+        </div>
+        <div class="user-balance">
+          <h3 class="amount">Payable Amount</h3>
+          <h4 class="cash">10,000</h4>
+          <h3 class="amount">Paid Amount</h3>
+          <h4 class="cash cash1">8,000</h4>
+          <h3 class="amount balance">Balance</h3>
+          <h4 class="cash cash2">2,000</h4>
+        </div>
+      </div>
+      <div class="service-btns">
+        <div class="service-btn">
+          <span onclick="eduservice1()" id="service-1">Education Service</span>
+        </div>
+        <div class="service-btn">
+          <span onclick="eduservice2()" id="service-2">Job Services</span>
+        </div>
+        <div class="service-btn">
+          <span onclick="eduservice3()" id="service-3">Courier Service</span>
+        </div>
+        <div class="service-btn">
+          <span onclick="eduservice4()" id="service-4">Courier Bulk</span>
+        </div>
+        <div class="service-btn">
+          <span onclick="eduservice5()" id="service-5">COD Booking</span>
+        </div>
+        <div class="service-btn">
+          <span onclick="eduservice6()" id="service-6">Add New Payment</span>
+        </div>
+      </div>
+      <div class="user-pic">
+        <img
+          class="user-img"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkstvneL1UVFnPpjuthvShjgYbPSrdNXIMcw&usqp=CAU"
+          alt="user-profile"
+        />
+      </div>
+
+      <div class="links">
+        <span class="visit">Visit For:</span>
+        <span id="visit" class="link-service"></span>
+      </div>
+      <div class="detail-section">
+        <div class="date">
+          <p class="official">Date:</p>
+          <input class="fields" required type="date" name="" id="" />
+        </div>
+        <div class="office">
+          <p class="official">Office</p>
+          <input
+            class="fields"
+            placeholder="Enter Value"
+            required
+            type="number"
+            name=""
+            id=""
+          />
+        </div>
+        <div class="invoice">
+          <p class="official">Invoice #</p>
+          <input
+            class="fields"
+            placeholder="Enter Value"
+            required
+            type="number"
+            name=""
+            id=""
+          />
+        </div>
+        <div class="reference">
+          <p class="official">Reference #</p>
+          <input
+            class="fields"
+            placeholder="Enter Value"
+            required
+            type="number"
+            name=""
+            id=""
+          />
+        </div>
+        <div class="person">
+          <p class="official">Reference Person</p>
+          <input
+            class="fields"
+            placeholder="Enter Name"
+            required
+            type="text"
+            name=""
+            id=""
+          />
+        </div>
+        <div class="hr">
+          <p class="official">HR #</p>
+          <input
+            class="fields"
+            placeholder="Enter Value"
+            required
+            type="number"
+            name=""
+            id=""
+          />
+        </div>
+      </div>
+      <div class="education">
+        <p class="education-detail">Booking Description</p>
+        <div class="detail-section">
+          <div class="date">
+            <p class="official">Courier Company</p>
+            <input
+              class="fields"
+              placeholder="Enter Company"
+              required
+              type="text"
+              name=""
+              id=""
+            />
+          </div>
+          <div class="office">
+            <p class="official">Order Type</p>
+            <input
+              class="fields"
+              placeholder="Enter Value"
+              required
+              type="text"
+              name=""
+              id=""
+            />
+          </div>
+          <div class="invoice">
+            <p class="official">Origin</p>
+            <input
+              class="fields"
+              placeholder="Enter Value"
+              required
+              type="text"
+              name=""
+              id=""
+            />
+          </div>
+          <div class="reference">
+            <p class="official">Destination</p>
+            <input
+              class="fields"
+              placeholder="Enter Value"
+              required
+              type="text"
+              name=""
+              id=""
+            />
+          </div>
+          <div class="person">
+            <p class="official">Zone</p>
+            <input
+              class="fields"
+              placeholder="Enter Name"
+              required
+              type="text"
+              name=""
+              id=""
+            />
+          </div>
+          <div class="hr">
+            <p class="official">Pieces</p>
+            <input
+              class="fields"
+              placeholder="Enter Value"
+              required
+              type="text"
+              name=""
+              id=""
+            />
+          </div>
+        </div>
+
+        <div class="detail-section">
+          <div class="date">
+            <p class="official">Weight</p>
+            <input class="fields" required type="number" name="" id="" />
+          </div>
+          <div class="office">
+            <p class="official">W</p>
+            <input
+              class="fields"
+              placeholder="Enter Value"
+              required
+              type="number"
+              name=""
+              id=""
+            />
+          </div>
+          <div class="invoice">
+            <p class="official">H</p>
+            <input
+              class="fields"
+              placeholder="Enter Value"
+              required
+              type="number"
+              name=""
+              id=""
+            />
+          </div>
+          <div class="reference">
+            <p class="official">L</p>
+            <input
+              class="fields"
+              placeholder="Enter Value"
+              required
+              type="number"
+              name=""
+              id=""
+            />
+          </div>
+          <div class="person">
+            <p class="official">Total Weight</p>
+            <input
+              class="fields"
+              placeholder="Enter Name"
+              required
+              type="text"
+              name=""
+              id=""
+            />
+          </div>
+          <div class="hr">
+            <p class="official">Booking Type</p>
+            <input
+              class="fields"
+              placeholder="Enter Value"
+              required
+              type="number"
+              name=""
+              id=""
+            />
+          </div>
+          <div class="hr">
+            <p class="official">Service Type</p>
+            <input
+              class="fields"
+              placeholder="Enter Value"
+              required
+              type="number"
+              name=""
+              id=""
+            />
+          </div>
+        </div>
+      </div>
+      <div class="main-details">
+        <div class="colmn-1">
+          <p class="education-detail">Booking Description</p>
+          <div class="detail-section">
+            <div class="date">
+              <p class="official">Name</p>
+              <input
+                class="fields"
+                placeholder="Enter Name"
+                required
+                type="search"
+                name=""
+                id=""
+              />
+            </div>
+            <div class="office">
+              <p class="official">CNIC</p>
+              <input
+                class="fields"
+                placeholder="Enter CNIC"
+                required
+                type="search"
+                name=""
+                id=""
+              />
+            </div>
+            <div class="invoice">
+              <p class="official">Father Name</p>
+              <input
+                class="fields"
+                placeholder="Enter Name"
+                required
+                type="text"
+                name=""
+                id=""
+              />
+            </div>
+            <div class="date-1">
+              <p class="official-1">Address</p>
+              <input
+                class="fields-1"
+                placeholder="Enter Address"
+                required
+                type="text"
+                name=""
+                id=""
+              />
+            </div>
+
+            <div class="office">
+              <p class="official">City</p>
+              <input
+                class="fields"
+                placeholder="Enter City"
+                required
+                type="text"
+                name=""
+                id=""
+              />
+            </div>
+            <div class="invoice">
+              <p class="official">Postal Code</p>
+              <input
+                class="fields"
+                placeholder="Enter Value"
+                required
+                type="number"
+                name=""
+                id=""
+              />
+            </div>
+            <div class="office">
+              <p class="official">Country</p>
+              <input
+                class="fields"
+                placeholder="Enter Country"
+                required
+                type="text"
+                name=""
+                id=""
+              />
+            </div>
+            <div class="invoice-1">
+              <p class="official-2">Contact #1</p>
+              <input
+                class="fields-2"
+                placeholder="Enter Value"
+                required
+                type="number"
+                name=""
+                id=""
+              />
+            </div>
+            <div class="invoice-1">
+              <p class="official-2">Contact #2</p>
+              <input
+                class="fields-2"
+                placeholder="Enter Value"
+                required
+                type="number"
+                name=""
+                id=""
+              />
+            </div>
+          </div>
+        </div>
+        <div class="colmn-2">
+          <p class="education-detail">Charges Detail</p>
+          <div class="detail-section">
+            <div class="date">
+              <p class="official">Remote Area</p>
+              <input
+                class="fields"
+                placeholder="Enter value"
+                required
+                type="search"
+                name=""
+                id=""
+              />
+            </div>
+            <div class="office">
+              <p class="official">Insurance</p>
+              <input
+                class="fields"
+                placeholder="Enter value"
+                required
+                type="search"
+                name=""
+                id=""
+              />
+            </div>
+            <div class="invoice">
+              <p class="official">Basic Charges</p>
+              <input
+                class="fields"
+                placeholder="Enter value"
+                required
+                type="text"
+                name=""
+                id=""
+              />
+            </div>
+            <div class="date-1">
+              <p class="official-1">Grand Total</p>
+              <input
+                class="fields"
+                placeholder="Enter value"
+                required
+                type="text"
+                name=""
+                id=""
+              />
+            </div>
+
+            <div class="office">
+              <p class="official">Discount %</p>
+              <input
+                class="fields"
+                placeholder="Enter value"
+                required
+                type="number"
+                name=""
+                id=""
+              />
+            </div>
+            <div class="invoice">
+              <p class="official">Discounted Amount</p>
+              <input
+                class="fields"
+                placeholder="Enter Value"
+                required
+                type="number"
+                name=""
+                id=""
+              />
+            </div>
+            <div class="office">
+              <p class="official">Payable Amount</p>
+              <input
+                class="fields"
+                placeholder="Enter value"
+                required
+                type="number"
+                name=""
+                id=""
+              />
+            </div>
+            <div class="invoice-1">
+              <p class="official-2">Paid Amount</p>
+              <input
+                class="fields-2"
+                placeholder="Enter Value"
+                required
+                type="number"
+                name=""
+                id=""
+              />
+            </div>
+            <div class="invoice-1">
+              <p class="official-2">Balance</p>
+              <input
+                class="fields-2"
+                placeholder="Enter Value"
+                required
+                type="number"
+                name=""
+                id=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="submit-btn">
+        <input class="fields submit" type="submit" value="Submit" />
+      </div>
+    </form>
+    <!-- <button class="">Submit</button> -->
+  </body>
+
+  <script>
+    let eduservice1 = () => {
+      let visit = document.getElementById("visit");
+      let service1 = document.getElementById("service-1");
+      visit.innerHTML = service1.innerHTML;
+    };
+    let eduservice2 = () => {
+      let visit = document.getElementById("visit");
+      let service2 = document.getElementById("service-2");
+      visit.innerHTML = service2.innerHTML;
+    };
+    let eduservice3 = () => {
+      let visit = document.getElementById("visit");
+      let service3 = document.getElementById("service-3");
+      visit.innerHTML = service3.innerHTML;
+    };
+    let eduservice4 = () => {
+      let visit = document.getElementById("visit");
+      let service4 = document.getElementById("service-4");
+      visit.innerHTML = service4.innerHTML;
+    };
+    let eduservice5 = () => {
+      let visit = document.getElementById("visit");
+      let service5 = document.getElementById("service-5");
+      visit.innerHTML = service5.innerHTML;
+    };
+    let eduservice6 = () => {
+      let visit = document.getElementById("visit");
+      let service6 = document.getElementById("service-6");
+      visit.innerHTML = service6.innerHTML;
+    };
+  </script>
+</html>
